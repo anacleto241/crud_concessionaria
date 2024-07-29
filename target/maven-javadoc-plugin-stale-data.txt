@@ -1,0 +1,80 @@
+@options
+@packages
+-classpath
+'C:/Users/fabri/.m2/repository/jakarta/platform/jakarta.jakartaee-api/10.0.0/jakarta.jakartaee-api-10.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/platform/jakarta.jakartaee-web-api/10.0.0/jakarta.jakartaee-web-api-10.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.0.0/jakarta.servlet-api-6.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/servlet/jsp/jakarta.servlet.jsp-api/3.1.0/jakarta.servlet.jsp-api-3.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/el/jakarta.el-api/5.0.1/jakarta.el-api-5.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/servlet/jsp/jstl/jakarta.servlet.jsp.jstl-api/3.0.0/jakarta.servlet.jsp.jstl-api-3.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/faces/jakarta.faces-api/4.0.1/jakarta.faces-api-4.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/websocket/jakarta.websocket-api/2.1.0/jakarta.websocket-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/websocket/jakarta.websocket-client-api/2.1.0/jakarta.websocket-client-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/json/jakarta.json-api/2.1.0/jakarta.json-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.0/jakarta.json.bind-api-3.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar;C:/Users/fabri/.m2/repository/jakarta/ejb/jakarta.ejb-api/4.0.1/jakarta.ejb-api-4.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar;C:/Users/fabri/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.1.0/jakarta.interceptor-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.0.1/jakarta.enterprise.cdi-api-4.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.0.1/jakarta.enterprise.lang-model-4.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar;C:/Users/fabri/.m2/repository/jakarta/authentication/jakarta.authentication-api/3.0.0/jakarta.authentication-api-3.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/security/enterprise/jakarta.security.enterprise-api/3.0.0/jakarta.security.enterprise-api-3.0.0.jar;C:/Users/fabri/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.0/jakarta.mail-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/resource/jakarta.resource-api/2.1.0/jakarta.resource-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/authorization/jakarta.authorization-api/2.1.0/jakarta.authorization-api-2.1.0.jar;C:/Users/fabri/.m2/repository/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1.jar;C:/Users/fabri/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar;C:/Users/fabri/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/fabri/OneDrive/Documentos/crud_concessionaria/src/main/java;C:/Users/fabri/OneDrive/Documentos/crud_concessionaria/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/fabri/OneDrive/Documentos/crud_concessionaria/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'crud_concessionaria-1.0-SNAPSHOT 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/fabri/OneDrive/Documentos/crud_concessionaria/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'crud_concessionaria-1.0-SNAPSHOT 1.0-SNAPSHOT API'
+com.mycompany.crud_concessionaria.controlador
+com.mycompany.crud_concessionaria
+com.mycompany.crud_concessionaria.modelo.dao
+com.mycompany.crud_concessionaria.modelo.entidade
+com.mycompany.crud_concessionaria.resources
+com.mycompany.crud_concessionaria.servico
+C:\Users\fabri\.m2\repository\jakarta\platform\jakarta.jakartaee-api\10.0.0\jakarta.jakartaee-api-10.0.0.jar = 1720452164054
+C:\Users\fabri\.m2\repository\jakarta\platform\jakarta.jakartaee-web-api\10.0.0\jakarta.jakartaee-web-api-10.0.0.jar = 1720452164686
+C:\Users\fabri\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar = 1720452164412
+C:\Users\fabri\.m2\repository\jakarta\servlet\jsp\jakarta.servlet.jsp-api\3.1.0\jakarta.servlet.jsp-api-3.1.0.jar = 1720452164250
+C:\Users\fabri\.m2\repository\jakarta\el\jakarta.el-api\5.0.1\jakarta.el-api-5.0.1.jar = 1720452164275
+C:\Users\fabri\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\3.0.0\jakarta.servlet.jsp.jstl-api-3.0.0.jar = 1720452164260
+C:\Users\fabri\.m2\repository\jakarta\faces\jakarta.faces-api\4.0.1\jakarta.faces-api-4.0.1.jar = 1720452164794
+C:\Users\fabri\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar = 1720452164398
+C:\Users\fabri\.m2\repository\jakarta\websocket\jakarta.websocket-api\2.1.0\jakarta.websocket-api-2.1.0.jar = 1720452164315
+C:\Users\fabri\.m2\repository\jakarta\websocket\jakarta.websocket-client-api\2.1.0\jakarta.websocket-client-api-2.1.0.jar = 1720452164381
+C:\Users\fabri\.m2\repository\jakarta\json\jakarta.json-api\2.1.0\jakarta.json-api-2.1.0.jar = 1720452164436
+C:\Users\fabri\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\3.0.0\jakarta.json.bind-api-3.0.0.jar = 1720452164453
+C:\Users\fabri\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar = 1720452164468
+C:\Users\fabri\.m2\repository\jakarta\ejb\jakarta.ejb-api\4.0.1\jakarta.ejb-api-4.0.1.jar = 1720452164483
+C:\Users\fabri\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar = 1720452164498
+C:\Users\fabri\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar = 1720452164578
+C:\Users\fabri\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar = 1720452164536
+C:\Users\fabri\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\2.1.0\jakarta.interceptor-api-2.1.0.jar = 1720452164552
+C:\Users\fabri\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\4.0.1\jakarta.enterprise.cdi-api-4.0.1.jar = 1720452164609
+C:\Users\fabri\.m2\repository\jakarta\enterprise\jakarta.enterprise.lang-model\4.0.1\jakarta.enterprise.lang-model-4.0.1.jar = 1720452164593
+C:\Users\fabri\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar = 1720452164646
+C:\Users\fabri\.m2\repository\jakarta\authentication\jakarta.authentication-api\3.0.0\jakarta.authentication-api-3.0.0.jar = 1720452164661
+C:\Users\fabri\.m2\repository\jakarta\security\enterprise\jakarta.security.enterprise-api\3.0.0\jakarta.security.enterprise-api-3.0.0.jar = 1720452164779
+C:\Users\fabri\.m2\repository\jakarta\jms\jakarta.jms-api\3.1.0\jakarta.jms-api-3.1.0.jar = 1720452164704
+C:\Users\fabri\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar = 1720452164708
+C:\Users\fabri\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.0\jakarta.mail-api-2.1.0.jar = 1720452164826
+C:\Users\fabri\.m2\repository\jakarta\resource\jakarta.resource-api\2.1.0\jakarta.resource-api-2.1.0.jar = 1720452164752
+C:\Users\fabri\.m2\repository\jakarta\authorization\jakarta.authorization-api\2.1.0\jakarta.authorization-api-2.1.0.jar = 1720452164755
+C:\Users\fabri\.m2\repository\jakarta\batch\jakarta.batch-api\2.1.1\jakarta.batch-api-2.1.1.jar = 1720452164794
+C:\Users\fabri\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar = 1720452165514
+C:\Users\fabri\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar = 1720452165157
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java = 1721878773690
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\generated-sources\annotations = 1721879727181
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\allclasses-index.html = 1721880009821
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\allpackages-index.html = 1721880009826
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\constant-values.html = 1721880009431
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\element-list = 1721880009138
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\help-doc.html = 1721880009986
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\index-all.html = 1721880009894
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\index.html = 1721880009755
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\member-search-index.js = 1721880009836
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\module-search-index.js = 1721880009830
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\overview-summary.html = 1721880009968
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\overview-tree.html = 1721880009750
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\package-search-index.js = 1721880009832
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\search.html = 1721880009964
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\tag-search-index.js = 1721880009839
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\target\apidocs\type-search-index.js = 1721880009834

@@ -1,0 +1,6 @@
+com.mycompany.crud_concessionaria
+com.mycompany.crud_concessionaria.controlador
+com.mycompany.crud_concessionaria.modelo.dao
+com.mycompany.crud_concessionaria.modelo.entidade
+com.mycompany.crud_concessionaria.resources
+com.mycompany.crud_concessionaria.servico
