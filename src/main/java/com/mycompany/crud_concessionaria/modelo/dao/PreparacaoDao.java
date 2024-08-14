@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.crud_concessionaria.modelo.dao;
-
-import com.mycompany.crud_concessionaria.modelo.entidade.Preparacao;
 import com.mycompany.crud_concessionaria.modelo.entidade.Preparacao;
 import com.mycompany.crud_concessionaria.servico.ConverteData;
 import java.sql.ResultSet;

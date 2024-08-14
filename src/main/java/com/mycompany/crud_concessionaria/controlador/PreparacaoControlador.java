@@ -34,8 +34,8 @@ public class PreparacaoControlador extends HttpServlet{
     String carroPreparacao = "";
     String data_inicio = "";
     String data_fim = "";
-    String descricaoo = "";
-    String custo;
+    String descricao = "";
+    String custo="";
     String opcao = "";
     private ConverteData converte = new ConverteData();
 
@@ -53,10 +53,11 @@ public class PreparacaoControlador extends HttpServlet{
         try {
             opcao = request.getParameter("opcao");
             preparacao_id = request.getParameter("preparacao_id");
-            nomePreparacao = request.getParameter("nomePreparacao");
-            salarioPreparacao = request.getParameter("salarioPreparacao");
-            nascimentoPreparacao = request.getParameter("nascimentoPreparacao");
             carroPreparacao = request.getParameter("carroPreparacao");
+            data_inicio = request.getParameter("data_inicio");
+            data_fim = request.getParameter("data_fim");
+            descricao = request.getParameter("descricao");
+            custo = request.getParameter("custo");
             if (opcao == null || opcao.isEmpty()) {
                 opcao = "cadastrar";
             }
@@ -81,63 +82,77 @@ public class PreparacaoControlador extends HttpServlet{
 
     private void cadastrar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         validaCampos();
-        preparacao.setNomePreparacao(nomePreparacao);
-        preparacao.setSalarioPreparacao(Double.valueOf(salarioPreparacao));
-        preparacao.setNascimentoPreparacao(converte.converteCalendario(nascimentoPreparacao));
-        preparacao.getCarroPreparacao().setCodigoCarro(Integer.valueOf(carroPreparacao));
+        preparacao.getCarroPreparacao().setCarro_id(Integer.valueOf(carroPreparacao));
+        preparacao.setData_inicio(converte.converteCalendario(data_inicio));
+        preparacao.setData_fim(converte.converteCalendario(data_fim));
+        preparacao.setDescricao(descricao);
+        preparacao.setCusto(Double.parseDouble(custo));
+        
+        
         preparacaoDao.salvar(preparacao);
         encaminharParaPagina(request, response);
     }
 
+    
     private void editar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("codigoPreparacao", codigoPreparacao);
+        request.setAttribute("preparacao_id", preparacao_id);
         request.setAttribute("opcao", "confirmarEditar");
-        request.setAttribute("nomePreparacao", nomePreparacao);
-        request.setAttribute("salarioPreparacao", salarioPreparacao);
-        request.setAttribute("nascimentoPreparacao", ConverteData.convertDateFormat(nascimentoPreparacao));
         request.setAttribute("carroPreparacao", carroPreparacao);
+        request.setAttribute("data_inicio", ConverteData.convertDateFormat(data_inicio));
+        request.setAttribute("data_fim", ConverteData.convertDateFormat(data_fim));
+        request.setAttribute("descricao", descricao);
+        request.setAttribute("custo", custo);
+        
+        
         request.setAttribute("mensagem", "Edite os dados e clique em salvar");
         encaminharParaPagina(request, response);
     }
+    
+    
+    
    private void excluir(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("codigoPreparacao", codigoPreparacao);
+        request.setAttribute("preparacao_id", preparacao_id);
         request.setAttribute("opcao", "confirmarExcluir");
-        request.setAttribute("nomePreparacao", nomePreparacao);
-        request.setAttribute("salarioPreparacao", salarioPreparacao);
-        request.setAttribute("nascimentoPreparacao", ConverteData.convertDateFormat(nascimentoPreparacao));
-        request.setAttribute("carroPreparacao", carroPreparacao);
+         request.setAttribute("carroPreparacao", carroPreparacao);
+        request.setAttribute("data_inicio", ConverteData.convertDateFormat(data_inicio));
+        request.setAttribute("data_fim", ConverteData.convertDateFormat(data_fim));
+        request.setAttribute("descricao", descricao);
+        request.setAttribute("custo", custo);
         request.setAttribute("mensagem", "Clique em salvar para excluir");
         encaminharParaPagina(request, response);
     }
 
     private void confirmarEditar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         validaCampos();
-        preparacao.setCodigoPreparacao(Integer.valueOf(codigoPreparacao));
-        preparacao.setNomePreparacao(nomePreparacao);
-        preparacao.setSalarioPreparacao(Double.valueOf(salarioPreparacao));
-        preparacao.setNascimentoPreparacao(converte.converteCalendario(nascimentoPreparacao));
-        preparacao.getCarroPreparacao().setCodigoCarro(Integer.valueOf(carroPreparacao));
+        preparacao.setPreparacao_id(Integer.valueOf(preparacao_id));
+        preparacao.getCarroPreparacao().setCarro_id(Integer.valueOf(carroPreparacao));
+        preparacao.setData_inicio(converte.converteCalendario(data_inicio));
+        preparacao.setData_fim(converte.converteCalendario(data_fim));
+        preparacao.setDescricao(descricao);
+        preparacao.setCusto(Double.parseDouble(custo));
         preparacaoDao.alterar(preparacao);
         cancelar(request, response);
     }
       private void confirmarExcluir(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         validaCampos();
-        preparacao.setCodigoPreparacao(Integer.valueOf(codigoPreparacao));
-        preparacao.setNomePreparacao(nomePreparacao);
-        preparacao.setSalarioPreparacao(Double.valueOf(salarioPreparacao));
-        preparacao.setNascimentoPreparacao(converte.converteCalendario(nascimentoPreparacao));
-        preparacao.getCarroPreparacao().setCodigoCarro(Integer.valueOf(carroPreparacao));
+        preparacao.setPreparacao_id(Integer.valueOf(preparacao_id));
+        preparacao.getCarroPreparacao().setCarro_id(Integer.valueOf(carroPreparacao));
+        preparacao.setData_inicio(converte.converteCalendario(data_inicio));
+        preparacao.setData_fim(converte.converteCalendario(data_fim));
+        preparacao.setDescricao(descricao);
+        preparacao.setCusto(Double.parseDouble(custo));
         preparacaoDao.excluir(preparacao);
         cancelar(request, response);
     }
 
     private void cancelar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("codigoPreparacao", "0");
+        request.setAttribute("preparacao_id", "0");
         request.setAttribute("opcao", "cadastrar");
-        request.setAttribute("nomePreparacao", "");
-        request.setAttribute("salarioPreparacao", "");
-        request.setAttribute("nascimentoPreparacao", "");
         request.setAttribute("carroPreparacao", "");
+        request.setAttribute("data_inicio", "");
+        request.setAttribute("data_fim", "");
+        request.setAttribute("descricao", "");
+        request.setAttribute("custo", "");
         encaminharParaPagina(request, response);
     }
 
@@ -155,10 +170,11 @@ public class PreparacaoControlador extends HttpServlet{
     }
     
      public void validaCampos() {
-        if (nomePreparacao == null || nomePreparacao.isEmpty()
-                || salarioPreparacao == null || salarioPreparacao.isEmpty()
-                || nascimentoPreparacao == null || nascimentoPreparacao.isEmpty()
-                || carroPreparacao == null || carroPreparacao.isEmpty()
+        if (carroPreparacao == null || carroPreparacao.isEmpty()
+                || data_inicio == null || data_inicio.isEmpty()
+                || data_fim == null || data_fim.isEmpty()
+                || descricao == null || descricao.isEmpty()
+                || custo == null || custo.isEmpty()
                 ) {
             throw new IllegalArgumentException("Um ou mais parâmetros estão ausentes.");
         }

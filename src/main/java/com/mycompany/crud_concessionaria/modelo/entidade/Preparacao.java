@@ -4,6 +4,7 @@
  */
 package com.mycompany.crud_concessionaria.modelo.entidade;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
@@ -17,6 +18,16 @@ public class Preparacao {
     private String descricao;
     private double custo;
 
+    public Calendar getData_inicio() {
+        return data_inicio;
+    }
+
+    public Calendar getData_fim() {
+        return data_fim;
+    }
+
+    
+    
     public Integer getPreparacao_id() {
         return preparacao_id;
     }
@@ -33,19 +44,8 @@ public class Preparacao {
         this.carroPreparacao = carroPreparacao;
     }
 
-
-
-    public Calendar getData_inicio() {
-        return data_inicio;
-    }
-
     public void setData_inicio(Calendar data_inicio) {
         this.data_inicio = data_inicio;
-    }
-    
-   
-    public Calendar getData_fim() {
-        return data_fim;
     }
 
     public void setData_fim(Calendar data_fim) {
@@ -67,5 +67,16 @@ public class Preparacao {
     public void setCusto(double custo) {
         this.custo = custo;
     }
+    
+    
+    public String getData_fim_formatada() {
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    return sdf.format(data_fim.getTime());
+    }
+     
+    public String getData_inicio_formatada() {
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    return sdf.format(data_inicio.getTime());
+}
     
 }
