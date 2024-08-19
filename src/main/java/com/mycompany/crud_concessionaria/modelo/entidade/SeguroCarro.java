@@ -93,5 +93,6 @@ public class SeguroCarro {
     public String getData_inicio_formatada() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         return sdf.format(data_inicio.getTime());
+        
 }
 }
