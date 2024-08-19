@@ -14,6 +14,8 @@
                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/FuncionarioControlador?opcao=cancelar">Funcionário</a></li>
                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/ClienteControlador?opcao=cancelar">Cliente</a></li>
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/PreparacaoControlador?opcao=cancelar">Preparação</a></li>
+                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/AgendamentoControlador?opcao=cancelar">Agendamento</a></li>
+                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/TestDriveControlador?opcao=cancelar">Test Drive</a></li>
                 <li><a href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/LoginControlador">Logout</a></li>
                 
