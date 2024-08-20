@@ -8,6 +8,7 @@ com\mycompany\crud_concessionaria\controlador\ClienteControlador.class
 com\mycompany\crud_concessionaria\modelo\dao\ClienteDao.class
 com\mycompany\crud_concessionaria\modelo\dao\Compra.class
 com\mycompany\crud_concessionaria\modelo\dao\ConnectionFactory.class
+com\mycompany\crud_concessionaria\modelo\entidade\ItensVenda.class
 com\mycompany\crud_concessionaria\modelo\entidade\SeguroCarro.class
 com\mycompany\crud_concessionaria\controlador\InspecaoCarroControlador.class
 com\mycompany\crud_concessionaria\modelo\entidade\Funcionario.class
@@ -33,6 +34,7 @@ com\mycompany\crud_concessionaria\resources\JakartaEE10Resource.class
 com\mycompany\crud_concessionaria\JakartaRestConfiguration.class
 com\mycompany\crud_concessionaria\modelo\dao\RowMapper.class
 com\mycompany\crud_concessionaria\modelo\dao\GarantiaDao.class
+com\mycompany\crud_concessionaria\modelo\dao\VendaDao.class
 com\mycompany\crud_concessionaria\modelo\dao\CarroDao$CarroRowMapper.class
 com\mycompany\crud_concessionaria\modelo\dao\GenericoDAO.class
 com\mycompany\crud_concessionaria\modelo\dao\UsuarioDAO.class
@@ -46,5 +48,7 @@ com\mycompany\crud_concessionaria\modelo\dao\TestDriveDao.class
 com\mycompany\crud_concessionaria\modelo\entidade\Cliente.class
 com\mycompany\crud_concessionaria\servico\ConverteData.class
 com\mycompany\crud_concessionaria\controlador\PreparacaoControlador.class
+com\mycompany\crud_concessionaria\modelo\dao\VendaDao$VendaRowMapper.class
+com\mycompany\crud_concessionaria\controlador\VendaControlador.class
 com\mycompany\crud_concessionaria\servico\WebConstantes.class
 com\mycompany\crud_concessionaria\modelo\entidade\TestDrive.class

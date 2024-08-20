@@ -1,24 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.crud_concessionaria.modelo.entidade;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- *
- * @author fabri
- */
 public class Venda {
-    private Integer venda_id;
-    private Carro carro = new Carro();
-    private Cliente cliente = new Cliente();
-    private Funcionario funcionario = new Funcionario();
-    private Calendar data_Venda;
-    private double preco_venda;
-    private double valor_comissao;
 
+    private Integer venda_id;
+    private Carro carroVenda = new Carro();
+    private Cliente clienteVenda = new Cliente();
+    private Funcionario funcionarioVenda = new Funcionario();
+    private Calendar data_venda;
+    private double valor_venda;
+    private double desconto_carro;
+
+    // Getters and Setters
     public Integer getVenda_id() {
         return venda_id;
     }
@@ -27,54 +22,56 @@ public class Venda {
         this.venda_id = venda_id;
     }
 
-    public Carro getCarro() {
-        return carro;
+    public Carro getCarroVenda() {
+        return carroVenda;
     }
 
-    public void setCarro(Carro carro) {
-        this.carro = carro;
+    public void setCarroVenda(Carro carroVenda) {
+        this.carroVenda = carroVenda;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public Cliente getClienteVenda() {
+        return clienteVenda;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setClienteVenda(Cliente clienteVenda) {
+        this.clienteVenda = clienteVenda;
     }
 
-    public Funcionario getFuncionario() {
-        return funcionario;
+    public Funcionario getFuncionarioVenda() {
+        return funcionarioVenda;
     }
 
-    public void setFuncionario(Funcionario funcionario) {
-        this.funcionario = funcionario;
+    public void setFuncionarioVenda(Funcionario funcionarioVenda) {
+        this.funcionarioVenda = funcionarioVenda;
     }
 
-    public Calendar getData_Venda() {
-        return data_Venda;
+    public Calendar getData_venda() {
+        return data_venda;
     }
 
-    public void setData_Venda(Calendar data_Venda) {
-        this.data_Venda = data_Venda;
+    public void setData_venda(Calendar data_venda) {
+        this.data_venda = data_venda;
     }
 
-    public double getPreco_venda() {
-        return preco_venda;
+    public double getValor_venda() {
+        return valor_venda;
     }
 
-    public void setPreco_venda(double preco_venda) {
-        this.preco_venda = preco_venda;
+    public void setValor_venda(double valor_venda) {
+        this.valor_venda = valor_venda;
     }
 
-    public double getValor_comissao() {
-        return valor_comissao;
+    public double getDesconto_carro() {
+        return desconto_carro;
     }
 
-    public void setValor_comissao(double valor_comissao) {
-        this.valor_comissao = valor_comissao;
+    public void setDesconto_carro(double desconto_carro) {
+        this.desconto_carro = desconto_carro;
     }
-    
-    
-    
+
+    public String getData_venda_formatada() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return sdf.format(data_venda.getTime());
+    }
 }

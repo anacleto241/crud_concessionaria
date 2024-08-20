@@ -6,15 +6,16 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css">
 </head>
 <body>
     <form id="cadastroForm" name="cadastro" method="post"  action="${pageContext.request.contextPath}${URL_BASE}/LoginControlador">
         <p>
-            <label>Username:</label>
+            <label>Usuário:</label>
             <input type="text" name="username" required>
         </p>
         <p>
-            <label>Password:</label>
+            <label>Senha:</label>
             <input type="password" name="password" required>
         </p>
         <p>

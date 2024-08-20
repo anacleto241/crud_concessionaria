@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Página Principal</title>
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css">
     </head>
+    
     <body>
        
         <nav>
@@ -19,6 +19,7 @@
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/InspecaoCarroControlador?opcao=cancelar">Inspeção</a></li>
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/SeguroCarroControlador?opcao=cancelar">Seguros</a></li>
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/GarantiaControlador?opcao=cancelar">Garantia</a></li>
+                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/VendaControlador?opcao=cancelar">Venda</a></li>
                 <li><a href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/LoginControlador">Logout</a></li>
                 

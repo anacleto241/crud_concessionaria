@@ -18,6 +18,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastro Test Drive</title>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css">
+
     </head>
 
     <body>

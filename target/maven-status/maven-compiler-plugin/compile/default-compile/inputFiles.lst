@@ -7,11 +7,13 @@ C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompa
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\entidade\Agendamento.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\servico\ConfigListener.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\entidade\Funcionario.java
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\VendaControlador.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\TestDriveControlador.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\GarantiaControlador.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\FuncionarioControlador.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\AgendamentoControlador.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\controlador\ClienteControlador.java
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\dao\VendaDao.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\dao\ClienteDao.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\dao\CarroDao.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\entidade\SeguroCarro.java
@@ -39,3 +41,4 @@ C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompa
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\entidade\TestDrive.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\dao\GenericoDAO.java
 C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\dao\UsuarioDAO.java
+C:\Users\fabri\OneDrive\Documentos\crud_concessionaria\src\main\java\com\mycompany\crud_concessionaria\modelo\entidade\ItensVenda.java

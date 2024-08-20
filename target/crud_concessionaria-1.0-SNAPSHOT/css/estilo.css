@@ -1,23 +1,221 @@
- nav ul{
-    list-style-type: none;/* remove os marcadores da lista*/
-    padding: 10px; /*espaço entre as barras da lista */
-    background-color: #333;/* cor fundo da barra naveg.*/
+/* Reset básico para garantir que o estilo seja consistente em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul li{
-    display: inline; /* exibe os itens da lista lada a lado*/
-    margin-right: 10px; /*espaçamento entre os itens*/
-    
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-nav ul li a{
-   color: white; /*cor do texto do link*/
-   text-decoration: none;/* remove o sublinhado dos links*/
-   font-weight: bold; /*texto dos links em negrito*/
+/* Estilo para o menu de navegação */
+nav {
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Gradiente de azul */
+    color: #fff;
 }
 
-nav ul li a:hover{
-    color:#ccc; /*cor do texto dos links ao passar o mouse*/
-    
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li:last-child a {
+    border-right: none;
+}
+
+/* Estilo para links dentro do corpo da página */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilo para o conteúdo principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para botões dentro de formulários */
+button, input[type="submit"] {
+    background-color: #007bff; /* Azul profissional */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para seções de destaque */
+.highlight {
+    background: #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.highlight h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.highlight button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.highlight button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para a seção Sobre Nós */
+.about {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
