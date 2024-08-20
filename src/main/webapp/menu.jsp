@@ -16,6 +16,9 @@
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/PreparacaoControlador?opcao=cancelar">Preparação</a></li>
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/AgendamentoControlador?opcao=cancelar">Agendamento</a></li>
                  <li><a href="${pageContext.request.contextPath}${URL_BASE}/TestDriveControlador?opcao=cancelar">Test Drive</a></li>
+                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/InspecaoCarroControlador?opcao=cancelar">Inspeção</a></li>
+                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/SeguroCarroControlador?opcao=cancelar">Seguros</a></li>
+                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/GarantiaControlador?opcao=cancelar">Garantia</a></li>
                 <li><a href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
                 <li><a href="${pageContext.request.contextPath}${URL_BASE}/LoginControlador">Logout</a></li>
                 

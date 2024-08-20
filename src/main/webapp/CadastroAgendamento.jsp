@@ -6,7 +6,7 @@
 <%@page import="com.mycompany.crud_concessionaria.modelo.dao.ClienteDao"%>
 <%@page import="com.mycompany.crud_concessionaria.modelo.dao.CarroDao"%>
 <%@page import="com.mycompany.crud_concessionaria.modelo.dao.AgendamentoDao"%>
-<%@page import="com.mycompany.crud_concessionaria.modelo.entidade.Agendamentos"%>
+<%@page import="com.mycompany.crud_concessionaria.modelo.entidade.Agendamento"%>
 <%@page import="com.mycompany.crud_concessionaria.modelo.entidade.Cliente"%>
 <%@page import="com.mycompany.crud_concessionaria.modelo.entidade.Carro"%>
 
