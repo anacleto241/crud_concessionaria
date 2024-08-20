@@ -48,7 +48,7 @@
                 <td>
                     <input type="submit" value="Cancelar" name="Cancelar"  />
                 </td>
-                <input type="hidden" name="opcao" value="cancelar" />
+                <input type="hidden" name="opcao" value="cancelar" />  
             </form>
         </table>
         ${mensagem}
