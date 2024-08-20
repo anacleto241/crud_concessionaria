@@ -38,7 +38,12 @@
                 <p><label>Ano</label> <input type="text" name="ano" value="${ano}" size="8" /> </p>
                 <p><label>Cor:</label> <input type="text" name="cor" value="${cor}" size="15" /> </p>
                 <p><label>Preço:</label> <input type="text" name="preco" value="${preco}" size="8" /> </p>
-                <p><label>Status</label> <input type="text" name="status" value="${status}" size="15" /> </p>
+                <p><label>Status</label>
+                <select name="status">
+                     <option value="Disponivel" <c:if test="${status == 'Disponivel'}">selected</c:if>>Disponível</option>
+                     <option value="Vendido" <c:if test="${status == 'Vendido'}">selected</c:if>>Vendido</option>
+                     <option value="Em preparacao" <c:if test="${status == 'Em preparacao'}">selected</c:if>>Em preparação</option>
+                </select>
                  <p><label>Percentual de comissão:</label> <input type="text" name="percentual_comissao" value="${percentual_comissao}" size="5" /> </p>
                 <td> 
                     <input type="submit" value="Salvar" name="Salvar"  /> 
@@ -78,9 +83,9 @@
                     <td>${carro.modelo}</td>
                     <td>${carro.ano}</td>
                     <td>${carro.cor}</td>
-                    <td>${carro.preco}</td>
+                    <td>R$ ${carro.preco}</td>
                     <td>${carro.status}</td>
-                    <td>${carro.percentual_comissao}
+                    <td>${carro.percentual_comissao}%
                     <td>
                         <form name="cadastroForm" action="${pageContext.request.contextPath}${URL_BASE}/CarroControlador" method="get">
                             <input type="hidden" name="carro_id" value="${carro.carro_id}" >

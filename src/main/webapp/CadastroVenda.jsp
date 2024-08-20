@@ -12,6 +12,30 @@
 <%@include file="menu.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<script>
+    function calcularValorVenda() {
+        const carroSelect = document.getElementById("carroVenda");
+        const descontoInput = document.getElementById("desconto_carro");
+        const valorVendaInput = document.getElementById("valor_venda");
+
+        // Obter o preço do carro selecionado
+        const selectedOption = carroSelect.options[carroSelect.selectedIndex];
+        const precoCarro = parseFloat(selectedOption.getAttribute("data-preco"));
+
+        // Obter o valor do desconto
+        const desconto = parseFloat(descontoInput.value) || 0;
+
+        // Calcular o valor da venda
+        const valorVenda = precoCarro - desconto;
+
+        // Atualizar o campo valor_venda
+        valorVendaInput.value = valorVenda.toFixed(2);
+    }
+
+    // Executar o cálculo ao carregar a página para preencher o valor inicial
+    window.onload = calcularValorVenda;
+</script>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -26,19 +50,19 @@
             <input type="hidden" name="venda_id" value="${venda_id}" />
 
             <p><label>Carro:</label>
-                <select name="carroVenda">
+                <select name="carroVenda" id="carroVenda" onchange="calcularValorVenda()" required>
                     <c:forEach var="carro" items="${carros}">
                         <c:choose> 
-                            <c:when test="${carro.carro_id eq carroVenda}">
-                                <option selected value="${carro.carro_id}">${carro.modelo}</option>
-                            </c:when>
-                            <c:otherwise>
-                                <option value="${carro.carro_id}">${carro.modelo}</option>
-                            </c:otherwise>
-                        </c:choose>
-                    </c:forEach>
-                </select>
-            </p>
+                    <c:when test="${carro.carro_id eq carroVenda}">
+                        <option selected value="${carro.carro_id}" data-preco="${carro.preco}">${carro.marca} ${carro.modelo} ${carro.ano} - Valor: R$${carro.preco}</option>
+                    </c:when>
+                    <c:otherwise>
+                        <option value="${carro.carro_id}" data-preco="${carro.preco}">${carro.marca} ${carro.modelo} ${carro.ano} - Valor: R$${carro.preco}</option>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </select>
+</p>
 
             <p><label>Cliente:</label>
                 <select name="clienteVenda">
@@ -71,8 +95,8 @@
             </p>
 
             <p><label>Data da Venda:</label> <input type="date" name="data_venda" value="${data_venda}" required /> </p>
-            <p><label>Valor da Venda:</label> <input type="text" name="valor_venda" value="${valor_venda}" required /> </p>
-            <p><label>Desconto no Carro:</label> <input type="text" name="desconto_carro" value="${desconto_carro}" required /> </p>
+            <p><label>Desconto no Carro (em R$):</label> <input type="text" id="desconto_carro" name="desconto_carro" value="${desconto_carro}" oninput="calcularValorVenda()" required /> </p>
+            <p><label>Valor da Venda:</label> <input type="text" id="valor_venda" name="valor_venda" value="${valor_venda}" readonly required /> </p>
 
             <p>
                 <input type="submit" value="Salvar" name="Salvar" />
